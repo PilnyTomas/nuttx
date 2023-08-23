@@ -126,7 +126,7 @@ from the top-level, controlled directory. That path is preceded by
 invalid in a macro name. So, for example, ``__INCLUDE_NUTTX_ARCH_H``
 corresponds to the header file ``include/nuttx/arch.h``
 
-**Deoxygen Information**. NuttX does not use Deoxygen for
+**Doxygen Information**. NuttX does not use Doxygen for
 documentation and no file should contain Doxygen tags or Doxygen
 style comments.
 
@@ -217,7 +217,7 @@ may be used in the file provided that it is used consistently.
 **NOTE**: See the discussion of `pointers <#farnear>`__ for
 information about the ``FAR`` qualifier used above.
 
-**Double Spacing**. A single blank line may be use to separate
+**Double Spacing**. A single blank line may be used to separate
 logical groupings as the designer feels fit. Single blank lines
 are also required in certain contexts as defined in this standard.
 Additional blanks lines (two or more) are prohibited.
@@ -791,7 +791,7 @@ standards <https://www.gnu.org/prep/standards/standards.pdf>`__ with a
 few subtle differences.
 
 **Indentation Unit**. Indentation is in units of two spaces; Each
-indentation level is twos spaces further to the right than the preceding
+indentation level is two spaces further to the right than the preceding
 indentation levels. TAB characters may not be used for indentation.
 
 .. error:: This is incorrect
@@ -1046,9 +1046,9 @@ any variable that has more than local scope.
    delimitation using ``_``. Long variable names, however, are
    discouraged.
 -  **Use structures**. If possible, wrap all global variables within a
-   structure to minimize the liklihood of name collisions.
+   structure to minimize the likelihood of name collisions.
 -  **Avoid global variables when possible**. Use of global variables, in
-   general, is discourage unless there is no other reasonable solution.
+   general, is discouraged unless there is no other reasonable solution.
 
 .. error:: This is incorrect
 
@@ -1351,8 +1351,10 @@ The use of typedef'ed structures is acceptable but discouraged.
       ...
     };
 
-The use of structures defined within other structures is acceptable provided that they define named fields.
-The general practice of defining a structure within the scope of another structure, however, is still but discouraged in any case.
+The use of structures defined within other structures is acceptable provided
+that they define named fields.
+The general practice of defining a structure within the scope of another
+structure, however, is still but discouraged in any case.
 The following is preferred:
 
 .. tip:: This is preferred
@@ -1641,7 +1643,7 @@ Function Headers
       (usually at column 78 for a total length of 79 characters).
    -  Information about the function is included in lines between the
       first and final lines. Each of these begin with a space in column
-      1, an sterisk (``*``) in column 2, and a space in column 3.
+      1, an asterisk (``*``) in column 2, and a space in column 3.
 
 -  **Function header preceded by one blank line**. Exactly one blank
    line precedes each function header.
@@ -1698,7 +1700,7 @@ Function Naming
    prefix like ``xyz_iob_``.
 -  **Use of** ``_`` **discouraged**. Further use of the ``'_'`` separators
    is discouraged in function naming. Long function names might require
-   some additional elimitation using ``'_'``. Long function names,
+   some additional delimitation using ``'_'``. Long function names,
    however, are also discouraged.
 -  **Verbs and Objects**. The remainder of the function name should be
    either in the form of *verb-object* or *object-verb*. It does not
@@ -1731,7 +1733,7 @@ Function Body
 -  **Braces in column 1** The opening and close braces of the compound
    statement must be placed in column one.
 -  **First definition or statement in column 3**. The first data
-   definitions or statements in the function body are idented by two
+   definitions or statements in the function body are indented by two
    spaces. Standards for statements are covered in the `following
    paragraph <#statements>`__
 -  **Local variables first**. Because NuttX conforms to the older C89
@@ -1955,7 +1957,7 @@ between the operator and the variable or number they are operating on.
 character in combination with ``=`` such as ``+=``, ``>=``, ``>>=``,
 etc. Some compilers will accept the ``=`` at the beginning or the end of
 the sequence. This standard, however, requires that the ``=`` always
-appear last in order to avoid amiguities that may arise if the ``=``
+appear last in order to avoid ambiguities that may arise if the ``=``
 were to appear first. For example, ``a =++ b;`` could also be
 interpreted as ``a =+ +b;`` or ``a = ++b`` all of which are very
 different.
