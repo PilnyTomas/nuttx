@@ -148,7 +148,7 @@ files should end in a single newline (``\n``). This avoids the
 typical C source or header file. Sometimes the nature of the
 content of a file may require that the lines exceed this limit.
 This often occurs in header files with naturally long definitions.
-If the line width must extend 78 lines, then some wider line width
+If the line width must extend 78 columns, then some wider line width
 may be used in the file provided that it is used consistently.
 
 **Line Wrapping**.
